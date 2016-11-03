@@ -1,0 +1,254 @@
+body
+{
+    margin:10px;
+    padding:0;
+    font-family:"Hammersmith One";
+    background:url(x.jpg) #2b2b2a;
+    
+}
+
+html,body
+{
+    heigth:100%;
+}
+*{
+    margin:0;
+    padding:0;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#login_form2
+{
+    width:  52%;
+    position: relative;
+    top: 50%;
+    float: left;
+    font-size: 27px;
+    height: 550px;
+    padding: 30px;
+    margin: 0px auto 0 auto;
+    border-radius: 10px;
+    border: 60px solid #ccc;
+    box-shadow: 0px 15px 15px rgba(0,0,0,0,3);
+    background: white;
+}
+#login_form3
+{
+    width:  95%;
+    position: relative;
+    top: 50%;
+    float: left;
+    font-size: 22px;
+    height: 550px;
+    padding: 30px;
+    margin: 0px auto 0 auto;
+    border-radius: 10px;
+    border: 60px solid #ccc;
+    box-shadow: 0px 15px 15px rgba(0,0,0,0,3);
+    background: white;
+}
+
+#login_form .input
+{
+    width:  80%;
+    margin: 0 auto 5px auto ;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 5px;
+    font-family: "Hammersmith One";
+    font-size: 22px;
+}
+
+#login_form label
+{
+    width: 80%;
+    margin: 0 auto;
+    display:block;
+    font-size: 20px;
+}
+#login_form #bt_form
+{
+    width: 15%;
+    border-radius: 20px;
+    float: right;
+    
+    font-size: 20px;
+    color:white;
+    background: #dd161c;
+    margin: 0px auto 0 auto;
+    display: block;
+    text-align: center;
+    cursor:pointer;
+    padding: 10px;
+    border: all;
+}
+#login_form #bt_form2
+{
+    width: 15%;
+    border-radius: 20px;
+    float: right;
+    font-size: 20px;
+    color:white;
+    background: #dd161c;
+    margin: 0 auto 0 auto;
+    display: block;
+    text-align: center;
+    cursor:pointer;
+    padding: 10px;
+    border: all;
+}
+#login_form #bt_form:hover
+{
+    background: #cc0606;
+}
+#login_form #bt_form2:hover
+{
+    background: #cc0606;
+}
+header
+{
+    margin-top: 10px;
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+    position: relative;
+}
+nav
+{
+    margin:20px auto;
+    width: 90%;
+    max-width: 1000px;
+}
+nav ul
+{
+    list-style: none;
+}
+nav>ul
+{
+    display: table;
+    width: 100%;
+    background: #000;
+    position: relative;
+}
+nav >ul li
+{
+    display: table-cell;
+}
+/*sub-menu*/
+nav > ul > li:hover > ul
+{
+    display:block;
+    height: 100%;
+}
+nav > ul > li > ul
+{
+    display: block;
+    position: absolute;
+    background: #000;
+    overflow: hidden;
+    height: 0%;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+    
+}
+
+nav>ul li a
+{
+    color: white;
+    display:block;
+    line-height: 20px;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+nav>ul>li>ul>li a:hover
+{
+    background: #5da5a2;
+}
+nav>ul>li>a span 
+{
+    background: #174459;
+    display: block;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    position: absolute;
+    top:-60px;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+nav>ul>li>a span .icon 
+{
+    display: block;
+    line-height: 60px;
+}
+nav >ul>li>a:hover>span
+{
+    top: 0;
+}
+/*colores*/
+nav ul li a .primero
+{
+    background:#0e5061;
+}
+nav ul li a .segundo
+{
+    background:#5da5a2;
+}
+nav ul li a .tercero
+{
+    background:#f25724;
+}
+nav ul li a .cuarto
+{
+    background:#174459;
+}
+nav ul li a .Quinto
+{
+    background:#37a4d9;
+}
+.social
+{
+    position: fixed;
+    left: 0;
+    top: 200px;
+    z-index: 2000;
+}
+.social ul{
+    list-style: none;
+}
+.social ul li a{
+    display: inline-block;
+    color: #fff;
+    background: #000;
+    padding: 10px 15px;
+    text-decoration: none;
+    -webkit-transition:all 500ms ease;
+    -o-transition:all 500ms ease;
+    transition:all 500ms ease; 
+}
+.social ul li .icon-facebook{background: #3b5998;}
+.social ul li .icon-google{background: #F5313B;}
+.social ul li .icon-youtube{background: #FF0000;}
+.social ul li .icon-instagram{background: #1D448B;}
+
+.social ul li a:hover {
+    padding: 10px 30px;
+    background: black;
+}

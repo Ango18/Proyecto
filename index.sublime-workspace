@@ -1,0 +1,380 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "<?php\n\nclass Registroa extends CI_controller {   \n        \n    function registro_perro(){\n        if((isset($_POST['nombre']))&& !empty($_POST['nombre'])&& \n            isset($_POST['edad'])&& !empty($_POST['edad'])&&\n            isset($_POST['raza'])&& !empty($_POST['raza'])){\n        \n    \n          \n          $con = mysqli_connect(\"sql305.55freehost.com\", \"hzree_18894011\", \" pokemon\");\n    if(mysqli_connect_errno())\n    {\n        echo \"No se pudo conectar a la base de datos\".mysqli_connect_error();\n       }\n\n       $nombre =  mysqli_real_escape_string($con, $_POST['nombre']);\n       $edad = mysqli_real_escape_string($con,  $_POST['edad']);\n       $raza = mysqli_real_escape_string($con, $_POST['raza']);\n       \n\n\n       $sql=\"INSERT INTO perros (Nombre, Edad, Raza) VALUES ('$nombre','$edad','$raza')\";\n       if(!mysqli_query($con,$sql))\n       {\n        die('Error: ' .msql_error($con));\n       }else{\n       echo \"Guardado correctamente\";\n       //$this->load->view('login');\n       }\n       \n       \n       echo \"<a href='Inicio' > Volver Al Menu </a>\";\n     \n    }else{\n\n	  echo \"Debes llenar todos los campos.\";\n	  echo \"<a href='Formulario1' > Volver Al Menu </a>\";\n	}  \n}      \n\n?>  ",
+			"file": "/C/Users/jhofan/Desktop/Proyecto1/application/controllers/registroa.php",
+			"file_size": 1232,
+			"file_write_time": 131189517963515297,
+			"settings":
+			{
+				"buffer_size": 1203,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/Users/jhofan/Desktop/Proyecto1/application/controllers/php.php",
+			"settings":
+			{
+				"buffer_size": 8267,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/jhofan/Desktop/Proyecto1/application/config/database.php",
+			"settings":
+			{
+				"buffer_size": 4576,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Packages/Rust/Rust.sublime-build",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/jhofan/AppData/Local/Temp/Rar$DIa0.936/php.php",
+		"/C/Users/jhofan/Desktop/application/application/config/config.php",
+		"/C/Users/jhofan/Desktop/application/application/controllers/php.php",
+		"/C/Users/jhofan/Desktop/application/application/controllers/Ingreso.php",
+		"/C/Users/jhofan/Desktop/application/application/controllers/Inicio.php",
+		"/C/Users/jhofan/Desktop/application/application/controllers/registroa.php",
+		"/C/xampp/htdocs/Proyecto/index.php",
+		"/C/Users/jhofan/Desktop/application/application/config/database.php",
+		"/C/Users/jhofan/AppData/Local/Temp/Rar$DIa0.866/database.php",
+		"/C/Users/jhofan/AppData/Local/Temp/Rar$DIa0.009/Ingreso.php",
+		"/C/Users/jhofan/AppData/Local/Temp/Rar$DIa0.584/registroa.php",
+		"/C/xampp/htdocs/Proyecto/application/views/Tabla2.php",
+		"/C/xampp/htdocs/Proyecto/application/config/database.php",
+		"/C/xampp/htdocs/Proyecto/application/controllers/php.php",
+		"/C/xampp/htdocs/Proyecto/system/database/drivers/mysqli/mysqli_driver.php",
+		"/C/Users/jhofan/Desktop/application/application/views/login.php",
+		"/C/Users/jhofan/Desktop/application/application/config/routes.php",
+		"/C/Users/jhofan/Desktop/application/application/views/Iniciovi.php",
+		"/C/xampp/htdocs/Proyecto/application/config/routes.php",
+		"/C/Users/jhofan/Desktop/application/application/config/migration.php",
+		"/C/xampp/htdocs/Proyecto/application/controllers/Inicio.php",
+		"/C/xampp/htdocs/Proyecto/application/views/Iniciov.php",
+		"/C/xampp/htdocs/Proyecto/application/views/errors/cli/error_php.php",
+		"/C/Users/jhofan/Desktop/application/application/controllers/Welcome.php",
+		"/C/xampp/htdocs/Proyecto/application/views/Inicioad.php",
+		"/C/Users/jhofan/Desktop/application/system/core/Router.php",
+		"/C/Users/jhofan/AppData/Local/Temp/Rar$DIa0.545/registroa.php",
+		"/C/Users/jhofan/AppData/Local/Temp/Rar$DIa0.683/Ingreso.php",
+		"/C/Users/jhofan/AppData/Local/Temp/Rar$DIa1.405/Ingreso.php",
+		"/C/Users/jhofan/AppData/Local/Temp/Rar$DIa0.199/php.php",
+		"/C/Users/jhofan/AppData/Local/Temp/Rar$DIa0.405/Inicio.php",
+		"/C/Users/jhofan/AppData/Local/Temp/Rar$DIa0.384/php.php",
+		"/C/Users/jhofan/AppData/Local/Temp/Rar$DIa0.394/php.php",
+		"/C/Users/jhofan/AppData/Local/Temp/Rar$DIa0.065/php.php",
+		"/C/Users/jhofan/AppData/Local/Temp/Rar$DIa0.896/php.php",
+		"/C/Users/jhofan/Desktop/application/application/views/Tabla2.php",
+		"/C/Users/jhofan/Desktop/application/application/views/Tabla.php",
+		"/C/xampp/htdocs/Proyecto/application/controllers/registroa.php",
+		"/C/xampp/htdocs/Proyecto/application/controllers/Welcome.php",
+		"/C/xampp/htdocs/Proyecto/application/controllers/Ingreso.php",
+		"/C/Users/jhofan/Desktop/application/system/database/drivers/mysqli/mysqli_driver.php",
+		"/C/Users/jhofan/Desktop/Proyecto/application/controllers/php.php",
+		"/C/Users/jhofan/Desktop/Proyecto/css/estilos/fonts.css",
+		"/C/Users/jhofan/Desktop/Proyecto/css/estilos/Ingreso.css",
+		"/C/Users/jhofan/Desktop/Proyecto/system/database/DB.php",
+		"/C/Users/jhofan/Desktop/Proyecto/system/database/drivers/mysqli/mysqli_utility.php",
+		"/C/Users/jhofan/Desktop/Proyecto/application/controllers/registroa.php",
+		"/C/Users/jhofan/Desktop/Proyecto/application/controllers/Ingreso.php",
+		"/C/Users/jhofan/Desktop/Proyecto/application/controllers/Inicio.php",
+		"/C/Users/jhofan/Desktop/Proyecto/application/controllers/Welcome.php",
+		"/C/Users/jhofan/Desktop/Proyecto/application/config/database.php",
+		"/C/Users/jhofan/Desktop/Proyecto/application/config/config.php",
+		"/C/Users/jhofan/Desktop/Proyecto/application/views/Ingreso.php",
+		"/C/Users/jhofan/Desktop/Proyecto/application/views/Adopcion.php",
+		"/C/Users/jhofan/Desktop/Proyecto/application/views/Iniciovi.php",
+		"/C/Users/jhofan/Desktop/Proyecto/application/views/errors/cli/error_php.php",
+		"/C/Users/jhofan/Desktop/Proyecto/application/views/errors/html/error_exception.php",
+		"/C/Users/jhofan/Desktop/Proyecto/application/models/usuarios_model.php",
+		"/C/Users/jhofan/Desktop/Proyecto/application/views/welcome_message.php",
+		"/C/xampp/htdocs/menu_php/index.php",
+		"/C/Users/jhofan/Downloads/index (1).php",
+		"/C/Users/jhofan/Downloads/index.php",
+		"/C/xampp/htdocs/menu_php/menu.php",
+		"/C/xampp/htdocs/menu_php/conex.php",
+		"/C/xampp/htdocs/menu_php/style.css",
+		"/C/xampp/htdocs/menu_php/menu_php/index.php",
+		"/C/Users/jhofan/Downloads/menu_php/menu_php/menu.php",
+		"/C/xampp/htdocs/Proyecto/application/views/Iniciovi.php",
+		"/C/xampp/htdocs/Proyecto/application/views/welcome_message.php",
+		"/C/xampp/htdocs/Proyecto/css/estilos/Ingreso.css",
+		"/C/xampp/htdocs/Proyecto/css/estilos/iniciov.css",
+		"/C/xampp/htdocs/Proyecto/application/views/Tabla.php",
+		"/C/xampp/htdocs/Proyecto/application/views/Adopcion.php",
+		"/C/xampp/htdocs/Proyecto/application/views/Tablaa.php",
+		"/C/xampp/htdocs/Proyecto/application/views/Eliminar2.php",
+		"/C/xampp/htdocs/Proyecto/application/views/Donacion.php",
+		"/C/xampp/htdocs/Proyecto/application/models/usuarios_model.php",
+		"/C/xampp/htdocs/bitnami.css",
+		"/C/xampp/htdocs/Proyecto/application/config/hooks.php",
+		"/C/xampp/htdocs/Proyecto/application/views/Eliminar.php",
+		"/C/xampp/htdocs/Proyecto/css/estilos/tablecloth.css",
+		"/C/xampp/htdocs/index.php",
+		"/C/xampp/htdocs/Proyecto/application/views/Ingreso.php",
+		"/C/xampp/htdocs/Proyecto/system/database/DB_cache.php",
+		"/C/xampp/htdocs/Proyecto/system/core/Common.php",
+		"/C/Users/jhofan/Downloads/reporteexcel/reporteexcel/reporteexcel.php",
+		"/C/xampp/htdocs/Proyecto/css/estilos/Formulario1.css",
+		"/C/Users/jhofan/Desktop/rl-php-master/rl-php-master/php/login.php",
+		"/C/Users/jhofan/AppData/Roaming/Sublime Text 3/Packages/Default/Default (Windows).sublime-keymap",
+		"/C/Program Files/Sublime Text 3/Packages/Package Control.sublime-package",
+		"/C/Users/jhofan/Downloads/Package Control.sublime-package",
+		"/C/Users/jhofan/Desktop/rl-php-master/rl-php-master/php/navbar.php",
+		"/C/Users/jhofan/Desktop/rl-php-master/rl-php-master/index.php",
+		"/C/Users/jhofan/Desktop/rl-php-master/rl-php-master/home.php",
+		"/C/Users/jhofan/Desktop/rl-php-master/rl-php-master/php/conexion.php",
+		"/C/Users/jhofan/Desktop/prueba"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"<?",
+			"$route['",
+			"$route"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/C/Users/jhofan/Desktop/Proyecto1/application/controllers/registroa.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1203,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								117,
+								117
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/C/Users/jhofan/Desktop/Proyecto1/application/controllers/php.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8267,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								788,
+								788
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/C/Users/jhofan/Desktop/Proyecto1/application/config/database.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4576,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3888,
+								3888
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 898.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 100.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/Rust/Rust.sublime-build",
+	"project": "index.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
